@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 
 .igem-title {
 	text-align: center;
-	font-family: 'Poppins';
+	font-family: 'Rubik';
 	font-size: 80px;
 	color: #0FA3B1;
 	font-weight: bold;
@@ -18,7 +18,7 @@
 }
 
 p {
-	font-family: 'Poppins', serif;
+	font-family: 'Rubik', serif;
 	color: #0FA3B1;
 	margin: 1em 3em;
 	text-align: justify;
@@ -50,7 +50,7 @@ p {
 	transition-property: background;
 	transition-duration: 0.5s;
 	transition-timing-function: ease;
-	font-family: 'Poppins';
+	font-family: 'Rubik';
 }
 
 .nav-pills .nav-link:hover {
