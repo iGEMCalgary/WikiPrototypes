@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald|Abel');
+
+/* Position needs to be relative so that children divisions can then be absolute */
+.image-container {
+
+	position: relative;
+
+}
+
+/* The image itself */
+.profile {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	/* It needs a specific height/width for the styling to work property */
+	width: 500px;
+	height: 500px;
+	object-fit: cover;
+
+}
+
+/* Turns the overlay on when user hovers over the container */
+.overlay-container:hover .overlay {
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in;
+	opacity: 0.5;
+}
+
+/* Static properties of the overlay */
+.overlay-container .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500px;
+	height: 500px;
+	background-color: white;
+	opacity: 0;
+}
+
+/* Static properties of the overlay elements */
+.overlay-elements {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500px;
+	height: 500px;
+	opacity: 0;
+
+	/* Centering the elements horizontally and vertically */
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	transform: translateY(-10%);
+}
+
+/* Turns overlay elements on when user hovers over container */
+.overlay-container:hover .overlay-elements {
+	opacity: 1;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in;
+	transform: translateY(0%);
+}
+
+.profile-title {
+	font-family: 'Oswald';
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+}
+
+.profile-subtitle {
+	font-family: 'Montserrat';
+	font-size: 20px;
+	color: white;
+}
+
+.profile-info-btn {
+	font-family: 'Abel';
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+
+	border-radius: 5px;
+	border-width: 0px;
+
+	background-color: white;
+}
