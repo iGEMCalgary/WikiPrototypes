@@ -58,34 +58,11 @@ p {
 	color: white;
 }
 
-#navbar {
-	margin: 2% 0;
-	padding: 0.5% 0%;
-
-	overflow: hidden;
-
-	background-color: rgb(200, 247, 247);
-}
-
-@keyframes slideDown {
-	from {
-		top: -50%;
-		transform: translateX(-50%);
-		opacity: 0;
-	}
-	to {
-		top: 0;
-		transform: translateX(-50%);
-		opacity: 1;
-	}
-}
-
 /*Getting the nav bar to stick*/
 .stick {
 
-	animation-duration: 0.5s;
-  	animation-name: slideDown;
-	display: none;
+	top: -50%;
+
 	position: fixed;
 	top: 0;
 	margin: 0;
@@ -100,4 +77,8 @@ p {
 
 	background-color: rgb(200, 247, 247);
 
+}
+
+.empty-space {
+	height: ;
 }
