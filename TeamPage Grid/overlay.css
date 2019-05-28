@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald|Abel');
 
+body {
+	height: 2000px;
+}
+
 /* Position needs to be relative so that children divisions can then be absolute */
 .image-container {
 
@@ -61,7 +65,7 @@
 .overlay-container:hover .overlay-elements {
 	opacity: 1;
 	transition-duration: 0.2s;
-	transition-timing-function: ease-in;
+	transition-timing-function: linear;
 	transform: translateY(0%);
 }
 
@@ -70,12 +74,14 @@
 	font-size: 30px;
 	font-weight: bold;
 	color: white;
+	margin-bottom: 0;
 }
 
 .profile-subtitle {
 	font-family: 'Montserrat';
 	font-size: 20px;
 	color: white;
+	margin-top: 0;
 }
 
 .profile-info-btn {
@@ -89,4 +95,41 @@
 	border-width: 0px;
 
 	background-color: white;
+}
+
+.biography-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+	width: 100%;
+
+	background-color: black;
+	opacity: 0.5;
+}
+
+.biography-window {
+
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		height: 75%;
+		width: 75%;
+		transform: translate(-50%, -50%);
+
+		background-color: white;
+
+		border-radius: 20px;
+}
+
+.exit {
+	position: absolute;
+	right: -20px;
+	top: -20px;
+	height: 70px;
+	width: 70px;
+	border-width: 0;
+	border-radius: 10px;
+	font-weight: bold;
 }

@@ -10,8 +10,6 @@ function initiate() {
 
 	empty.style.height = navBar.offsetHeight + "px";
 
-	console.log(navBar.offsetHeight);
-
 	// --[[ Highlighting the current page link on the navigation bar ]]--
 
 	container = document.getElementById("link-container");
