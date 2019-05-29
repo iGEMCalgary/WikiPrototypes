@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+.navbar-brand {
+	font-family: 'Rubik';
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.container-fluid {
+	padding-left:0;
+	padding-right:0;
+}
+
+.navbar {
+	background-color: #ffcc00;
+}
+
+p {
+	font-family: 'Rubik', serif;
+	color: #0FA3B1;
+	margin: 1em 3em;
+	text-align: justify;
+}
+
+/*Overidding the navigational bar styles in Bootstrap*/
+.navbar-dark .navbar-nav .nav-link {
+	margin: 0 10px;
+	font-family: 'Rubik';
+	color: #fff5cc;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: white;
+	font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-item>.active {
+	color: white;
+	font-weight: bold;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffcc00;
+    background-color: rgb(0,0,0,0);
+}
+
+.dropdown-item {
+	font-family: 'Rubik';
+	color: #fff5cc;
+}
+
+.dropdown-item:hover {
+	background-color: rgb(0,0,0,0);
+	color: white;
+	font-weight: bold;
+}
+
+.dropdown-menu {
+	border-radius: 0;
+	border-width: 0;
+	background-color: #ffdb4d;
+}

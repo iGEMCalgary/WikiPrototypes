@@ -1,0 +1,3 @@
+- design and implement for mobile
+	- Rylan's parallax scrolling will need to be disabled for mobile
+- figure out how to use same navbar on all pages without copy-pasting
