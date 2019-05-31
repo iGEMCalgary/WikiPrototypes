@@ -9,10 +9,22 @@
 .container-fluid {
 	padding-left:0;
 	padding-right:0;
+	text-align: center;
+}
+
+/* Each child has a margin*/
+.container-fluid > * {
+	margin: 2em 2em 0em 2em;
+}
+
+/* Last child element has a bottom margin */
+.container-fluid > *:nth-last-child(1) {
+	margin: 2em 2em 2em 2em;
 }
 
 .navbar {
 	background-color: #ffcc00;
+	margin: 0;
 }
 
 h2 {
@@ -34,8 +46,8 @@ p {
 article {
 	padding: 1em 2em;
 	background-color: #ffcc00;
-	margin: 2em 3em;
 	border-radius: 10px;
+	text-align: justify;
 }
 
 /*Overidding the navigational bar styles in Bootstrap*/
@@ -77,4 +89,8 @@ article {
 	border-radius: 0;
 	border-width: 0;
 	background-color: #ffdb4d;
+}
+
+img {
+	max-width: 90%;
 }
