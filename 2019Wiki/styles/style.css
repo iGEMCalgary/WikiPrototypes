@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
-.navbar-brand {
+.navbar-dark .navbar-brand {
 	font-family: 'Rubik';
 	font-size: 30px;
 	font-weight: bold;
+	color: black;
 }
 
 .container-fluid {
@@ -12,24 +13,13 @@
 	text-align: center;
 }
 
-/* Each child has a margin*/
-.container-fluid > * {
-	margin: 2em 2em 0em 2em;
-}
-
-/* Last child element has a bottom margin */
-.container-fluid > *:nth-last-child(1) {
-	margin: 2em 2em 2em 2em;
-}
-
 .navbar {
-	background-color: #ffcc00;
-	margin: 0;
+	background-color: rgba(0,0,0,0);
 }
 
 h2 {
 	font-family: 'Rubik', serif;
-	color: white;
+	color: black;
 	padding: 0.5em 0.5em;
 	text-align: justify;
 	font-weight: bold;
@@ -37,16 +27,13 @@ h2 {
 
 p {
 	font-family: 'Rubik', serif;
-	color: #0FA3B1;
+	color: black;
 	text-align: justify;
-	color: white;
 	font-size: 20px;
 }
 
 article {
 	padding: 1em 2em;
-	background-color: #ffcc00;
-	border-radius: 10px;
 	text-align: justify;
 }
 
@@ -54,43 +41,60 @@ article {
 .navbar-dark .navbar-nav .nav-link {
 	margin: 0 10px;
 	font-family: 'Rubik';
-	color: #fff5cc;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-	color: white;
+	color: black;
 	font-weight: bold;
 }
 
-.navbar-dark .navbar-nav .nav-item>.active {
-	color: white;
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-brand:hover, 
+.navbar-dark .navbar-nav .nav-item>.active:hover {
+	color: rgb(0,0,0,0.3);
+	border-color: rgb(0,0,0,0.3);
 	font-weight: bold;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-out;
+}
+
+.navbar-dark .navbar-nav .nav-item>.active, .dropdown-item.active, .dropdown-item:active {
+	color: black;
+	font-weight: bold;
+	border-bottom: 3px solid black;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: black;
+    padding-bottom: 5px;
 }
 
 .dropdown-item.active, .dropdown-item:active {
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffcc00;
     background-color: rgb(0,0,0,0);
 }
 
 .dropdown-item {
 	font-family: 'Rubik';
-	color: #fff5cc;
+	color: black;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0);
+	transition-property: background-color color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-out;
 }
 
 .dropdown-item:hover {
-	background-color: rgb(0,0,0,0);
-	color: white;
-	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: black;
+	transition-property: background-color color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	color: rgb(0,0,0,0.3);
 }
 
 .dropdown-menu {
 	border-radius: 0;
 	border-width: 0;
-	background-color: #ffdb4d;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 img {
-	max-width: 90%;
+	width: 100%;
+	height: auto;
 }
