@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,400,500,600&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Barlow';
+}
+
+.backing {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	background-color: white;
+	z-index: 20;
+	box-shadow: 0px 2px 8px grey;
+}
+
+.title {
+	font-size: 40px;
+	color: black;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+.title:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.emphasis {
+	font-weight: 500;
+	color: #E59D5C;
+}
+
+.introduction {
+	margin-top: 80px;
+	text-align: center;
+	position: relative;
+	height: 90vh;
+}
+
+.introduction .blurb {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20%;
+}
+
+.introduction .blurb h6, .introduction .blurb h1, .introduction .blurb p {
+	color: white;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.introduction .blurb h6 {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.introduction .blurb h1 {
+	margin-top: 5px;
+	margin-bottom: 30px;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.introduction .blurb p {
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 40px;
+}
+
+.white-bg {
+	background: white;
+}
+
+.article {
+	text-align: center;
+	padding: 60px;
+}
+
+.article-title {
+	font-weight: 500;
+	color: #E59D5C;
+	font-size: 25px;
+}
+
+.article-text {
+	font-weight: 300;
+	font-size: 25px;
+}
+
+.footer {
+	position: relative;
+	padding: 100px;
+	text-align: center;
+}
+
+.footer .contact-info {
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 20px;
+	font-size: 25px;
+	color: white;
+	font-weight: 300;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.footer .contact-info td {
+	padding-bottom: 15px;
+}
+
+.dark {
+	color: #BDAA7A;
+	text-align: right;
+	padding-right: 20px;
+	font-weight: 500;
+}
+
+@media only screen and (max-width: 750px) {
+	.introduction .blurb {
+		padding: 5%;
+	}
+
+	.footer {
+		padding: 100px 0px 100px 0px;
+	}
+}

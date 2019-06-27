@@ -5,7 +5,7 @@ body {
 	position: relative;
 }
 
-.navbar-dark .navbar-brand {
+.navbar-light .navbar-brand {
 	font-family: 'Rubik';
 	font-size: 30px;
 	font-weight: bold;
@@ -19,8 +19,7 @@ body {
 }
 
 .navbar {
-	background-color: rgba(0,0,0,0);
-	margin: 2vh 2vw 0;
+	padding: 20px;
 }
 
 h2 {
@@ -44,28 +43,32 @@ article {
 }
 
 /*Overidding the navigational bar styles in Bootstrap*/
-.navbar-dark .navbar-nav .nav-link {
-	margin: 0 10px;
+.navbar-light .navbar-nav .nav-link {
+	margin: 0 25px;
 	font-family: 'Rubik';
 	color: black;
 	font-weight: bold;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-brand:hover, 
-.navbar-dark .navbar-nav .nav-item>.active:hover, .navbar-dark .navbar-nav .show>.nav-link:hover {
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-brand:hover, 
+.navbar-light .navbar-nav .nav-item>.active:hover, .navbar-light .navbar-nav .show>.nav-link:hover {
 	color: rgb(0,0,0,0.3);
 	font-weight: bold;
 	transition-duration: 0.2s;
 	transition-timing-function: ease-out;
 }
 
-.navbar-dark .navbar-nav .nav-item>.active, .dropdown-item.active, .dropdown-item:active {
-	color: black;
-	font-weight: bold;
-	border-bottom: 3px solid white;
+.navbar-light .navbar-nav .nav-item>.active:hover {
+	border-bottom-color: rgba(0,0,0,0.3);
 }
 
-.navbar-dark .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .nav-item>.active, .dropdown-item.active, .dropdown-item:active {
+	color: black;
+	font-weight: bold;
+	border-bottom: 3px solid black;
+}
+
+.navbar-light .navbar-nav .show>.nav-link {
     color: black;
     padding-bottom: 5px;
 }
@@ -86,7 +89,7 @@ article {
 
 .dropdown-item:hover {
 	background-color: rgba(255, 255, 255, 0.2);
-	color: rgb(255,255,255,0.5);
+	color: rgba(0, 0, 0, 0.3);
 	transition-property: background-color color;
 	transition-duration: 0.3s;
 	transition-timing-function: ease-out;
