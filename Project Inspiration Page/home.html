@@ -29,11 +29,7 @@
 
 						<h1>Canola oil is one of Canada's leading exports.</h1>
 
-						<p>We’re here to help local farmers earn more 
-						for their canola crops by tackling a problem 
-						know as “green seed”. It’s our hope that our 
-						work will help advance the local agricultural 
-						industry. </p>
+						<p>However, the Canadian canola industry currently faces a number of obstacles like unpredictable weather patterns, a lack of standardization when grading yields, and a problematic phenomenon known as “green seed”. Our team seeks to help local farmers creating tools to tackle all three of these issues. </p>
 
 					</div>
 
@@ -42,23 +38,61 @@
 		</div>
 
 		<div class="row" style="background-color: white;">
-			<div class="col-md-6">
+			<div class="col-md-4">
 				<div class="article">
-					<h2 class="article-title">THE PROBLEM</h2>
-					<p class="article-text">Lorem ipsum dolor sit amet, 
-					consectetur adipiscing elit, sed do eiusmod tempor 
-					incididunt ut labore et dolore magna aliqua. Tellus cras 
-					adipiscing enim eu turpis egestas.</p>
+					<h2 class="article-title">GREEN SEED</h2>
+					<p class="article-text">Immature canola seeds contain a high concentration of chlorophyll, which gives them a green hue. As the seeds mature, enzymes act to break down the chlorophyll and the seeds eventually turn brown. However, if the plants are exposed to frost or drought before the maturation process is complete, the chlorophyll degradation pathway suspends itself and the seeds remain green. The oil pressed from green canola seeds contains a high concentration of chlorophyll, which causes the oil to have a foul taste and spoil quickly. The green seed problem causes annual losses of over 150 million dollars.</p>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-4 image-holder" style="background-color: #ffffff">
+				<div class="article">
+					<img src="assets/canola-oil.svg">
+				</div>
+			</div>
+			<div class="col-md-4">
 				<div class="article">
 					<h2 class="article-title">OUR SOLUTION</h2>
-					<p class="article-text">Egestas egestas fringilla 
-						phasellus faucibus scelerisque. Hac habitasse 
-						platea dictumst quisque sagittis. Tristique magna 
-						sit amet purus. Ipsum a arcu cursus vitae. 
-						Non curabitur.</p>
+					<p class="article-text">Our team aims to address this issue by using water-soluble chlorophyll-binding proteins and emulsified water droplets to isolate and remove the chlorophyll molecules from the oil. The extracted chlorophyll will be converted to pheophorbide a, a downstream molecule in the chlorophyll degradation pathway. </p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row beige-bg">
+			<div class="col-md-4">
+				<div class="article">
+					<h2 class="article-title">SEED GRADING</h2>
+					<p class="article-text">Canola seeds are graded based on the percentage of seeds in the batch that are green. Farmers will bring their harvested seeds to grain elevators, where inspectors will randomly sample and crush a 500 to 1000 seeds and compare the color of each crushed seed to a printed standard provided by the Canadian Grain Commission. A batch of seeds that is less than 2% green is considered No. 1 grade, whereas batches that are up to 6% and 20% green are considered No. 2 and No. 3 grade respectively. However, this current method for determining the percentage of green seeds is highly subjective, because the seeds are judged by the human eye alone and this fact often results in disputes between farmers and grain elevators.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="article image-holder">
+					<img src="assets/canola-sticks.svg">
+				</div>	
+			</div>
+			<div class="col-md-4">
+				<div class="article">
+					<h2 class="article-title">OUR SOLUTION</h2>
+					<p class="article-text">Our team is working on standardizing this process by using OpenCV (a computer vision library) to perform object and colour recognition. The software will be accompanied by an electronic setup that will employ uniform lighting and a high-resolution camera to systematically grade canola seeds in a consistent and reproducible manner.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="background-color: white;">
+			<div class="col-md-4">
+				<div class="article">
+					<h2 class="article-title">WEATHER</h2>
+					<p class="article-text">Canada is known for its volatile and unpredictable climate. Farmers must often take risks when deciding which crops to plant and when to plant them. Although a few weather prediction models already exist, many of them only offer short term data that is insufficient to adequately inform long-term decision-making.</p>
+				</div>
+			</div>
+			<div class="col-md-4 image-holder">
+				<div class="article">
+					<img src="assets/weather.svg">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="article">
+					<h2 class="article-title">OUR SOLUTION</h2>
+					<p class="article-text">To address this issue, two members of our dry lab are working on a computer model that utilizes deep learning techniques to reliably predict minimum temperature several months into the future as it relates to frost. The final approach will be achieved through principal component analysis, a statistical method that is used to transform large amounts of data into a smaller portion that still contains most of the original information (while this does slightly reduce the accuracy of our predictions, it allows our model to function more efficiently by analyzing a smaller dataset).</p>
 				</div>
 			</div>
 		</div>

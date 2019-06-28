@@ -49,7 +49,7 @@
 	margin-top: 80px;
 	text-align: center;
 	position: relative;
-	height: 90vh;
+	height: 130vh;
 }
 
 .introduction .blurb {
@@ -94,6 +94,20 @@
 .article {
 	text-align: center;
 	padding: 60px;
+}
+
+.article img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 70%;
+	object-fit:cover;
+	border: 12px solid #eed698;
+	border-radius: 20px;
 }
 
 .article-title {
@@ -143,4 +157,18 @@
 	.footer {
 		padding: 100px 0px 100px 0px;
 	}
+}
+
+.beige-bg {
+	color: #A09060;
+	background-color: #ffecba;
+}
+
+.beige-bg .article-title {
+	color: #D8A41E;
+}
+
+.image-holder {
+	margin-top: 80px; 
+	margin-bottom: 100px;
 }
